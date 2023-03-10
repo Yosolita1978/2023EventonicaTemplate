@@ -16,9 +16,11 @@ Go to your source directory in your terminal and run the command `git clone http
 
 6. This template has two servers already working. Both servers should run now with by running `npm run dev` from within the server directory in your terminal. Please note that in server 8080 you will have the Backend, and in server 3000 you will have dev from React. 
 7. To add a Postgres DB
-7.1 Inside your server directory create a `.env` file and copy there the values that are in `.envexample`
+
+6.1 Inside your server directory create a `.env` file and copy there the values that are in `.envexample`
 In a new terminal window go inside the server directory and run the command `psql -U postgres -f db.sql` that will create a database `eventonica` and a table `events` with 5 rows. 
-7.2 Copy the setup instructions for [pg](https://node-postgres.com/apis/pool) in your db folder (you have to create one). Your connection string is probably something like postgres://localhost:5432/eventonica. You should not need a username or password if you setup [postgres correctly](https://github.com/Techtonica/curriculum/blob/main/databases/installing-postgresql.md).
+
+6.2 Copy the setup instructions for [pg](https://node-postgres.com/apis/pool) in your db folder (you have to create one). Your connection string is probably something like postgres://localhost:5432/eventonica. You should not need a username or password if you setup [postgres correctly](https://github.com/Techtonica/curriculum/blob/main/databases/installing-postgresql.md).
 
 ![Your DB should look like this](https://raw.githubusercontent.com/Yosolita1978/screenshoots/696689a627eb5ca206b5a2eaebec7cc1efa15ffc/2023/H1/Screen%20Shot%202023-03-09%20at%208.25.54%20PM.png)
 
