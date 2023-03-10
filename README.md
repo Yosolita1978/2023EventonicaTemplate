@@ -1,4 +1,8 @@
 # Quick-setup 
+
+![Initial View of the project](https://raw.githubusercontent.com/Yosolita1978/screenshoots/50a5573f21c1265d20d838a36b98588f9b4eefce/2023/H1/Screen%20Shot%202023-03-09%20at%208.03.32%20PM.png)
+
+
 ### Your First Express and React App with a DB connection
 
 Go to your source directory in your terminal and run the command `git clone https://github.com/Yosolita1978/week8Game.git <NAMENEWDIRECTORY>`
@@ -14,10 +18,7 @@ Go to your source directory in your terminal and run the command `git clone http
 7. To add a Postgres DB
 7.1 Inside your server directory create a `.env` file and copy there the values that are in `.envexample`
 In a new terminal window go inside the server directory and run the command `psql -U postgres -f db.sql` that will create a database `eventonica` and a table `events` with 5 rows. 
-
-![Initial View of the project](https://raw.githubusercontent.com/Yosolita1978/screenshoots/50a5573f21c1265d20d838a36b98588f9b4eefce/2023/H1/Screen%20Shot%202023-03-09%20at%208.03.32%20PM.png)
-
-
+7.2 Copy the setup instructions for [pg](https://node-postgres.com/apis/pool) in your db folder (you have to create one). Your connection string is probably something like postgres://localhost:5432/eventonica. You should not need a username or password if you setup [postgres correctly](https://github.com/Techtonica/curriculum/blob/main/databases/installing-postgresql.md).
 
 ![Your DB should look like this](https://raw.githubusercontent.com/Yosolita1978/screenshoots/696689a627eb5ca206b5a2eaebec7cc1efa15ffc/2023/H1/Screen%20Shot%202023-03-09%20at%208.25.54%20PM.png)
 
