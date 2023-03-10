@@ -29,8 +29,8 @@ app.get('/api/events', (req, res) =>{
         {id: 1, title: 'Women in Tech Techtonica Panel', location: 'Overland Park Convention Center'},
         {id: 2, title: 'Japanese Cultural Education', location: 'Seattle Convention Center'},
         {id: 3, title: 'Mary', location: 'Hilton Hotel Kansas City'},
-        {id: 4, title: 'Cristina', location: 'SF Hilton Hotel'},
-        {id: 5, title: 'Jair', location: 'West Ridge Mall '},
+        {id: 4, title: 'Comedy Night at the Station', location: 'SF Hilton Hotel'},
+        {id: 5, title: 'A Decadent Arts Experience', location: 'West Ridge Mall '},
       ];
     res.json(events);
 })

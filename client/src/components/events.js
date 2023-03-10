@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import EventCard from "./event";
+
 
 function Events() {
     const [events, setEvents] = useState([]);
@@ -17,7 +19,7 @@ function Events() {
         <h2>Techtonica 2023 events</h2>
         <ul>
             {events.map(event =>
-            <li key={event.id}> { event.title} {event.location} </li>
+            <EventCard key={event.id} title={event.title} location={event.location}/>
             )}
         </ul>
       
