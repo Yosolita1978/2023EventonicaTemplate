@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import EventCard from "./event";
+import CardGroup from 'react-bootstrap/CardGroup';
+
 
 
 function Events() {
@@ -15,15 +17,11 @@ function Events() {
           }, []);
 
   return (
-    <div className="Events">
-        <h2>Techtonica 2023 events</h2>
-        <ul>
+    <CardGroup className="Events">
             {events.map(event =>
-            <EventCard key={event.id} title={event.title} location={event.location}/>
+            <EventCard key={event.id} title={event.title} location={event.location} time={event.eventtime}/>
             )}
-        </ul>
-      
-    </div>
+    </CardGroup>
   );
 }
 
