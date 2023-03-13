@@ -18,11 +18,20 @@ Go to your source directory in your terminal and run the command `git clone http
 7. To add a Postgres DB
 
 6.1 Inside your server directory create a `.env` file and copy there the values that are in `.envexample`
-In a new terminal window go inside the server directory and run the command `psql -U postgres -f db.sql` that will create a database `eventonica` and a table `events` with 5 rows. 
+* In a different terminal window go to the psql terminal with the comand `psql`
+* Inside the psql prompt create your database eventonica with the command `create database eventonica;` (don't forget the semicolon!)
+![You will see something like this](https://raw.githubusercontent.com/Yosolita1978/screenshoots/b6b7e47b8ccda4b9f709d20e94cacb6506d4dc13/2023/H1/Screen%20Shot%202023-03-13%20at%2011.13.13%20AM.png)
 
-6.2 Copy the setup instructions for [pg](https://node-postgres.com/apis/pool) in your db folder (you have to create one). Your connection string is probably something like postgres://localhost:5432/eventonica. You should not need a username or password if you setup [postgres correctly](https://github.com/Techtonica/curriculum/blob/main/databases/installing-postgresql.md).
+Back in the terminal window with the project go inside the server directory and run the command `psql -d eventonica -f db.sql` that will create a table `events` with 5 rows inside your db eventonica. 
+![This will be the result of that command](https://raw.githubusercontent.com/Yosolita1978/screenshoots/b6b7e47b8ccda4b9f709d20e94cacb6506d4dc13/2023/H1/Screen%20Shot%202023-03-13%20at%2011.12.29%20AM.png)
 
+Your DB should look like this inside the psql terminal
 ![Your DB should look like this](https://raw.githubusercontent.com/Yosolita1978/screenshoots/696689a627eb5ca206b5a2eaebec7cc1efa15ffc/2023/H1/Screen%20Shot%202023-03-09%20at%208.25.54%20PM.png)
+
+# Links that you will need
+
+* The instructions for [pg](https://node-postgres.com/apis/pool)  
+* Setup [postgres correctly](https://github.com/Techtonica/curriculum/blob/main/databases/installing-postgresql.md).
 
 
 
