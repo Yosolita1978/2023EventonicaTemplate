@@ -18,11 +18,13 @@
 
 5. This template has two servers already working. Both servers should start simultaneously, or "concurrently", by running `npm run dev` from within the server directory in your terminal. Please note that your backend server will run from port 8080, and your frontend React server will run from port 3000 .
 
-6. To add a Postgres DB
+6. To add a Postgres DB - you will need another terminal window for this part
 
 6.1 Inside your server directory create a `.env` file and copy there the values that are in `.envexample`
+
 * In a different terminal window go to the psql terminal with the comand `psql`
 * Inside the psql prompt create your database eventonica with the command `create database eventonica;` (don't forget the semicolon!)
+
 ![You will see something like this](https://raw.githubusercontent.com/Yosolita1978/screenshoots/b6b7e47b8ccda4b9f709d20e94cacb6506d4dc13/2023/H1/Screen%20Shot%202023-03-13%20at%2011.13.13%20AM.png)
 
 Back in the terminal window with the project go inside the server directory and run the command `psql -d eventonica -f db.sql` that will create a table `events` with 5 rows inside your db eventonica. 
