@@ -1,6 +1,6 @@
 # Quick-setup 
 
-#### Once you have successfully setup this template and initial database, the initial view will look like this:
+#### Once you have successfully setup this template and initial database, the view will look like this:
 
 ![Initial View of the project](https://raw.githubusercontent.com/Yosolita1978/screenshoots/50a5573f21c1265d20d838a36b98588f9b4eefce/2023/H1/Screen%20Shot%202023-03-09%20at%208.03.32%20PM.png)
 ### Your First Express and React App with a DB connection
